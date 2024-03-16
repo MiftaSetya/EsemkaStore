@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alertLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/titleLogin"
+        android:text="Please login to continue"
+        android:textColor="@color/grey"/>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/alertLogin"
+        android:hint="Email"
+        android:text="khuddle0@cbc.ca"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/input_bg"/>
+
+    <EditText
+        android:id="@+id/pw_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/email_et"
+        android:hint="Password"
+        android:text="P@ssw0rd123"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/input_bg"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw_et"
+        android:layout_alignParentEnd="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"
+        android:letterSpacing="0.1"/>
+
+</RelativeLayout>
